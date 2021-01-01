@@ -1,14 +1,12 @@
-先安装vimsudo pacman -S vim
-
-sudo vim /etc/pacman.d/mirrorlist
-Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
-sudo pacman -Syy
-
-
-sudo vim /etc/pacman.conf
+sudo nano /etc/pacman.conf
 文件末尾添加：
 [archlinuxcn]
-Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+SigLevel = Never
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+
+sudo pacman-mirrors -c China
+
+sudo pacman -Syyu
 
 
 安装archlinuxcn-keyring
