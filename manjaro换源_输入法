@@ -25,3 +25,7 @@ export XMODIFIERS=@im=fcitx
 
 设置fcitx5开机自启动
 可以输入中文了
+
+
+#如果无中文字体
+sudo pacman -S noto-fonts-cjk
