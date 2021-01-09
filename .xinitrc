@@ -57,10 +57,10 @@ numlockx &
 picom -CGb &   
 while habak -ms -hi ~/Picture/   #让habak从你的壁纸目录中随机选择一张屏幕壁纸显示
 do
-	sleep 300   #让habak每隔10分钟随机切换一张屏幕壁纸
+	sleep 600   #让habak每隔10分钟随机切换一张屏幕壁纸
 done &
 
-while xsetroot -name "Wifi:$(cat /sys/class/net/enp0s5/operstate)|Volume:$(amixer get Master | awk -F'[][]' 'END { print $2 }')|$(LC_ALL='C' date +'%F[%b %a] %R')"   #在dwm的菜单栏里显示一个简易的系统状态栏，包括wifi、有线网、电池电量、音量、日期和时间(24小时制)。喜欢功能丰富的同学可以自己去安装配置polybar、conky、i3status、slstatus等，从中选一个。
+while xsetroot -name "Wifi:$(cat /sys/class/net/enp0s5/operstate)|IP:$(ip addr show enp0s5| awk '/enp0s5/{print $2}'|tail -1)|Volume:$(amixer get Master | awk -F'[][]' 'END { print $2 }')|$(LC_ALL='C' date +'%F[%b %a] %R')"   #在dwm的菜单栏里显示一个简易的系统状态栏，包括wifi、ip、、音量、日期和时间(24小时制)。喜欢功能丰富的同学可以自己去安装配置polybar、conky、i3status、slstatus等，从中选一个。
 do
 	sleep 1   #每隔1分钟刷新一次状态栏
 done &
