@@ -13,7 +13,7 @@ Plugin 'ervandew/supertab'
 call vundle#end()  
 filetype plugin indent on
 set  nu
-set relativenumber
+set  relativenumber
 set incsearch
 syntax on
 syntax enable
@@ -24,11 +24,7 @@ set pastetoggle=<F2>
 set ts=4
 set sw=4
 " 主题 molikai 
-let g:solarized_termtrans=1
-let g:solarized_contrast="normal"
-let g:solarized_visibility="normal"
-" 配色方案
-set background=dark
+let g:molokai_original = 1
 set t_Co=256
 colorscheme molokai
 " 括号匹配高亮
