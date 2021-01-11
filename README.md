@@ -1,1 +1,7 @@
 # linux_config
+
+
+
+
+
+

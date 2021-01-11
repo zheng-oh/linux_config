@@ -24,7 +24,7 @@ set pastetoggle=<F2>
 set ts=4
 set sw=4
 " 主题 molikai 
-let g:molokai_original = 1
+let g:molokai_original = 0
 set t_Co=256
 colorscheme molokai
 " 括号匹配高亮
