@@ -1,7 +1,2 @@
 # linux_config
-
-
-
-
-
-
+f18e9962b1c857a6360fdcdd9fb1cccc
